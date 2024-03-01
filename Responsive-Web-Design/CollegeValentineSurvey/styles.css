@@ -1,0 +1,123 @@
+/* Overall styling */
+body {
+  font-family: sans-serif; /* Use a web-safe font for better accessibility */
+  margin: 0; /* Remove default margin for better control */
+  padding: 20px; /* Add some padding for visual spacing */
+  background-color: #f2f2f2; /* Add a subtle background color */
+}
+
+/* Title and description */
+#title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333; /* Adjust color for better contrast */
+  margin-bottom: 10px;
+}
+
+#description {
+  text-align: center;
+  color: #777; /* Adjust color for readability */
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+#survey-form {
+  width: 500px; /* Set a maximum width for responsiveness */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding for form elements */
+  border: 1px solid #ccc; /* Add a subtle border */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  background-color: #fff; /* Use white background for better contrast */
+}
+
+/* Labels and inputs */
+label {
+  display: block; /* Make labels block-level for better formatting */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px; /* Provide spacing between checkboxes/radio buttons */
+}
+
+a {
+  display: block; /* Make questions block-level for alignment */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Adjust color for readability */
+}
+
+/* Dropdowns */
+#dropdown {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Textarea */
+.textarea {
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+.submit-area {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db; /* Use a primary color for the button */
+  color: #fff; /* White text for contrast */
+  font-weight: bold;
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Add hover effects and active states for interactive elements (optional) */
+.submit-area:hover {
+  background-color: #2980b9;
+}
+
+/* For improved accessibility: */
+label {
+  for: attr(id); /* Associate labels with their target inputs using 'for' */
+}
+
+input[required] {
+  border-color: #3498db; /* Use the primary color for required fields */
+}
+
+/* Consider using media queries for responsiveness */
+@media (max-width: 768px) {
+  #survey-form {
+    width: 90%;
+  }
+}
+body {
+  background-color: #ffd3b2; /* Replace with your chosen color */
+}
+
+/* Adjust text color based on the background color you choose */
+#title, #description, label, a {
+  color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="number"], #dropdown, .textarea {
+  background-color: #fff;
+}
