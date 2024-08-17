@@ -15,7 +15,7 @@ const showAnimation = () => {
 };
 
 const checkUserInput = () => {
-
+  const inputInt = parseInt(numberInput.value);
 
   if (
     !numberInput.value ||
