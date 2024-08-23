@@ -1,7 +1,9 @@
 # FreeCodeCamp_Projects
 
 All the projects that were submitted to gain the <i>Free Code Camp</i> Certification...
-This very repository is made to store and update the projects present on the FreeCodeCamp website and learn to use Github itself
+This very repository is made to store and update the projects present on the FreeCodeCamp website and learn to use Github itself.
+
+Feel free to look around the various website and code required for the certification.
 
 Interesting Certification's present on FreeCodeCamp:
 
