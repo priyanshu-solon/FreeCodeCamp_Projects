@@ -6,7 +6,8 @@ const isEven = testArr2.length % 2 === 0;
 console.log(isEven);
 const oddListMedian = testArr1[Math.floor(testArr1.length / 2)];
 console.log(oddListMedian);
-
+const evenListMedian = getMean([testArr2[testArr2.length / 2 - 1], testArr2[testArr2.length / 2]]);
+console.log(evenListMedian);
 const getMedian = (array) => {
   const sorted = array.sort((a, b) => a - b);
 }
