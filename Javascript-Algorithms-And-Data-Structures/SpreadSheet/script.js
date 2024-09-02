@@ -1,3 +1,13 @@
+const isEven=(num)=>{
+if(num%2===0){
+  return true
+}
+else{
+  return false
+}
+}
+const sum = nums => nums.reduce((acc, el) => acc + el, 0);
+
 const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);
 const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));
 
@@ -18,7 +28,7 @@ window.onload = () => {
       input.type = "text";
       input.id = letter + number;
       input.ariaLabel = letter + number;
-      container.appendChild(input)
+      container.appendChild(input);
     })
   })
 }
