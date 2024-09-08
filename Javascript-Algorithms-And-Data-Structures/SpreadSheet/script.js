@@ -26,10 +26,11 @@ const evalFormula = (x, cells) => {
   const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));
   const elemValue = num => {
     const inner = character => {
-      return idToText(character+num)
+      return idToText(character + num);
     }
     return inner;
   }
+  const addCharacters = character1 => character2 => num => charRange(character1,character2)
 }
 
 window.onload = () => {
