@@ -27,6 +27,7 @@ const evalFormula = (x, cells) => {
   const elemValue = num => character => idToText(character + num);
   const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));
   const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));
+const cellRegex = /[A-J][1-9][0-9]?/gi;
 }
 
 window.onload = () => {
