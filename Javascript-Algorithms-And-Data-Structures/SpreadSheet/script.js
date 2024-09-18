@@ -8,8 +8,7 @@ const infixToFunction = {
 const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));
 
 const highPrecedence = str => {
-  const regex = /\d+(\.\d+)?\s*[\*\/]\s*\d+(\.\d+)?/;
-  return regex.test(str);
+  const regex = /([\d.]+)([*\/])([\d.]+)/;
 }
 
 const isEven = num => num % 2 === 0;
