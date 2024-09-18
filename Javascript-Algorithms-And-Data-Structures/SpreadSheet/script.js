@@ -5,7 +5,7 @@ const infixToFunction = {
   "/": (x, y) => x / y,
 }
 
-const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => {});
+const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator]);
 
 const isEven = num => num % 2 === 0;
 const sum = nums => nums.reduce((acc, el) => acc + el, 0);
