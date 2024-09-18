@@ -7,6 +7,8 @@ const infixToFunction = {
 
 const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));
 
+const highPrecedence=(str)=>{}
+
 const isEven = num => num % 2 === 0;
 const sum = nums => nums.reduce((acc, el) => acc + el, 0);
 const average = nums => sum(nums) / nums.length;
