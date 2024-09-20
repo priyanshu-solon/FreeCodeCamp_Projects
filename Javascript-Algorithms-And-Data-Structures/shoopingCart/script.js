@@ -1,116 +1,88 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+const cartContainer = document.getElementById("cart-container");
+const productsContainer = document.getElementById("products-container");
+const dessertCards = document.getElementById("dessert-card-container");
+const cartBtn = document.getElementById("cart-btn");
+const clearCartBtn = document.getElementById("clear-cart-btn");
+const totalNumberOfItems = document.getElementById("total-items");
+const cartSubTotal = document.getElementById("subtotal");
+const cartTaxes = document.getElementById("taxes");
+const cartTotal = document.getElementById("total");
+const showHideCartSpan = document.getElementById("show-hide-cart");
+let isCartShowing = false;
 
-:root {
-  --dark-grey: #1b1b32;
-  --light-grey: #f5f6f7;
-  --black: #000;
-  --white: #fff;
-  --grey: #3b3b4f;
-  --golden-yellow: #fecc4c;
-  --yellow: #ffcc4c;
-  --gold: #feac32;
-  --orange: #ffac33;
-  --dark-orange: #f89808;
-}
+const products = [
+  {
+    id: 1,
+    name: "Vanilla Cupcakes (6 Pack)",
+    price: 12.99,
+    category: "Cupcake",
+  },
+  {
+    id: 2,
+    name: "French Macaron",
+    price: 3.99,
+    category: "Macaron",
+  },
+  {
+    id: 3,
+    name: "Pumpkin Cupcake",
+    price: 3.99,
+    category: "Cupcake",
+  },
+  {
+    id: 4,
+    name: "Chocolate Cupcake",
+    price: 5.99,
+    category: "Cupcake",
+  },
+  {
+    id: 5,
+    name: "Chocolate Pretzels (4 Pack)",
+    price: 10.99,
+    category: "Pretzel",
+  },
+  {
+    id: 6,
+    name: "Strawberry Ice Cream",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 7,
+    name: "Chocolate Macarons (4 Pack)",
+    price: 9.99,
+    category: "Macaron",
+  },
+  {
+    id: 8,
+    name: "Strawberry Pretzel",
+    price: 4.99,
+    category: "Pretzel",
+  },
+  {
+    id: 9,
+    name: "Butter Pecan Ice Cream",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 10,
+    name: "Rocky Road Ice Cream",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 11,
+    name: "Vanilla Macarons (5 Pack)",
+    price: 11.99,
+    category: "Macaron",
+  },
+  {
+    id: 12,
+    name: "Lemon Cupcakes (4 Pack)",
+    price: 12.99,
+    category: "Cupcake",
+  },
+];
 
-body {
-  background-color: var(--dark-grey);
-}
-
-.title {
-  color: var(--light-grey);
-  text-align: center;
-  margin: 25px 0;
-}
-
-#dessert-card-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.dessert-card {
-  background-color: var(--light-grey);
-  padding: 15px;
-  text-align: center;
-  border-radius: 15px;
-  margin: 20px 10px;
-}
-
-.dessert-price {
-  font-size: 1.2rem;
-}
-
-.btn {
-  display: block;
-  cursor: pointer;
-  width: 100px;
-  color: var(--dark-grey);
-  background-color: var(--gold);
-  background-image: linear-gradient(var(--golden-yellow), var(--orange));
-  border-color: var(--gold);
-  border-width: 3px;
-}
-
-.btn:hover {
-  background-image: linear-gradient(var(--yellow), var(--dark-orange));
-}
-
-#cart-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.add-to-cart-btn {
-  margin: 30px auto 10px;
-}
-
-#cart-container {
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background-color: var(--light-grey);
-  width: 200px;
-  height: 400px;
-  border: 8px double var(--black);
-  border-radius: 15px;
-  text-align: center;
-  font-size: 1.2rem;
-  overflow-y: scroll;
-}
-
-.product {
-  margin: 25px 0;
-}
-
-.product-count {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.product-category {
-  margin: 10px 0;
-}
-
-@media (min-width: 768px) {
-  #dessert-card-container {
-    flex-direction: row;
-  }
-
-  .dessert-card {
-    flex: 1 0 21%;
-  }
-
-  #cart-container {
-    width: 300px;
-  }
-}
+products.forEach(() =>{} );
