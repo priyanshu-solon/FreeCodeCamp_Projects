@@ -125,9 +125,14 @@ class ShoppingCart {
       ? currentProductCountSpan.textContent = `${currentProductCount}x`
       : productsContainer.innerHTML += `
       <div id="dessert${id}" class="product">
-      <p>price</p>
-      <p>${price}</p>
+        <p>
+          <span class="product-count" id="product-count-for-id${id}"></span>${name}
+        </p>
+        <p>${price}</p>
       </div>
       `;
   }
 };
+
+const cart = new ShoppingCart();
+const addToCartBtns= document.getElementsByClassName("add-to-cart-btn")
