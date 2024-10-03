@@ -137,9 +137,15 @@ class ShoppingCart {
     return this.items.length;
   }
 
-calculateTotal(){
-  const subTotal=this.items.reduce((total,item)=>total+item.price,0)
-}
+  calculateTaxes(amount) {
+    return parseFloat(((this.taxRate / 100) * amount).toFixed(2));
+  }
+
+  calculateTotal() {
+    const subTotal = this.items.reduce((total, item) => total + item.price, 0);
+    const tax = this.calculateTaxes(subTotal);
+    this.total = subTotal + tax;
+  }
 };
 
 const cart = new ShoppingCart();
