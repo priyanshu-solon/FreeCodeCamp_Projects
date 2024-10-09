@@ -21,9 +21,11 @@ class Player {
       y: proportionalSize(400),
     };
     this.velocity = {
-      x:0,
-      y:0
+      x: 0,
+      y: 0,
     };
+    this.width=proportionalSize(40)
+    this.height=proportionalSize(40);
   }
 }
 
