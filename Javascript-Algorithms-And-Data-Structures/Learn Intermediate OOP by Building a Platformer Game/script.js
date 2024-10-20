@@ -83,13 +83,17 @@ const keys = {
   }
 };
 
-
 const movePlayer = (key, xVelocity, isPressed) => {
   if (!isCheckpointCollisionDetectionActive) {
-    player.velocity.x=0;
-    player.velocity.y=0;
-    return
+    player.velocity.x = 0;
+    player.velocity.y = 0;
+    return;
   }
+
+switch(key){
+  
+}
+
 }
 
 
