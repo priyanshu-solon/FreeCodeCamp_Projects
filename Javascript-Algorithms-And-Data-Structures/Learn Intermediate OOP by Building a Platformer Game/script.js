@@ -56,7 +56,6 @@ class Player {
   }
 }
 
-
 class Platform {
   constructor(x, y) {
     this.position = {
@@ -72,8 +71,15 @@ class Platform {
   }
 }
 
-
 const player = new Player();
+
+
+const platformPositions = [
+    { x: 100, y: proportionalSize(200) },
+    { x: 300, y: proportionalSize(350) },
+    { x: 500, y: proportionalSize(450) }
+];
+
 
 const animate = () => {
   requestAnimationFrame(animate);
