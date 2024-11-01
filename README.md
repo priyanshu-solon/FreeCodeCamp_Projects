@@ -7,8 +7,8 @@ Feel free to look around the various website and code required for the certifica
 
 Interesting Certification's present on FreeCodeCamp:
 
-- [x] [Responsive-Web-Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/) -> [Certificate](https://www.freecodecamp.org/certification/fcc9177d2bf-2347-45c8-abf2-a8fc374ca38a/responsive-web-design)
-- [x] [Javascript-Algorithms-And-Data-Structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/)
+- [x] [Responsive-Web-Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/) -> [Certificate](https://www.freecodecamp.org/certification/fcc9177d2bf-2347-45c8-abf2-a8fc374ca38a/responsive-web-design](https://www.freecodecamp.org/certification/PriyanshuSolon/responsive-web-design))
+- [x] [Javascript-Algorithms-And-Data-Structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/) -> [Certificate](https://www.freecodecamp.org/certification/PriyanshuSolon/javascript-algorithms-and-data-structures-v8)
 - [ ] [Front-End-Development-Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/)
 - [ ] [Data-Visualization](https://www.freecodecamp.org/learn/data-visualization/)
 - [ ] [Relational-Database](https://www.freecodecamp.org/learn/relational-database/)
