@@ -71,6 +71,8 @@ class Platform {
   }
 }
 
+
+
 const player = new Player();
 
 const platformPositions = [
@@ -143,11 +145,10 @@ const animate = () => {
     ];
 
     if (platformDetectionRules.every(rule => rule)) {
-
+      player.position.y = platform.position.y + player.height;
+      player.velocity.y = gravity;
     };
-
   });
-
 }
 
 
