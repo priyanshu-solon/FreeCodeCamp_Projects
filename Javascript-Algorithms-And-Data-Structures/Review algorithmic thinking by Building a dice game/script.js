@@ -40,7 +40,12 @@ const updateRadioOption = (index, score) => {
   scoreSpans[index].textContent = `, score = ${score}`;
 };
 
+const updateScore = (selectedValue, achieved) => {
+  score += parseInt(selectedValue);
+  totalScoreElement.textContent = score;
 
+  scoreHistory.innerHTML += `<li>${achieved} : ${selectedValue}</li>`;
+};
 
 const getHighestDuplicates = (arr) => {
   const counts = {};
@@ -112,3 +117,4 @@ rulesBtn.addEventListener("click", () => {
     rulesContainer.style.display = "none";
   }
 });
+
