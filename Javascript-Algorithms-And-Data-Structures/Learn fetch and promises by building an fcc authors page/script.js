@@ -1,7 +1,9 @@
 const authorContainer = document.getElementById('author-container');
 const loadMoreBtn = document.getElementById('load-more-btn');
 
-
+let startingIndex = 0;
+let endingIndex = 8;
+let authorDataArr = [];
 
 fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
   .then((res) => res.json())
@@ -11,3 +13,4 @@ fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
   .catch((err) => {
     console.error(`There was an error: ${err}`);
   });
+
