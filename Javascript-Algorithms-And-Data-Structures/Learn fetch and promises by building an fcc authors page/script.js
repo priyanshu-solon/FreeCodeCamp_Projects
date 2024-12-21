@@ -9,6 +9,7 @@ fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
   .then((res) => res.json())
   .then((data) => {
     authorDataArr = data;
+    console.log("Author Data Array:", authorDataArr);
 
   })
   .catch((err) => {
