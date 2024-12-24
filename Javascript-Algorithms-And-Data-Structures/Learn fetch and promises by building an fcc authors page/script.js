@@ -9,7 +9,7 @@ fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
   .then((res) => res.json())
   .then((data) => {
     authorDataArr = data;
-    displayAuthors(authorDataArr.slice(startingIndex, endingIndex));
+    displayAuthors(authorDataArr.slice(startingIndex, endingIndex));   
   })
   .catch((err) => {
     console.error(`There was an error: ${err}`);
@@ -20,7 +20,8 @@ const displayAuthors = (authors) => {
     authorContainer.innerHTML += `
     <div id="${index}" class="user-card">
       <h2 class="author-name">${author}</h2>
-<img class="user-img" src="${image}" alt="${author} avatar">
+      <img class="user-img" src="${image}" alt="${author} avatar" />
+<p class="bio">${bio}</p>
     </div>
   `;
   });
