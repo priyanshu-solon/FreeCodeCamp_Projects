@@ -33,6 +33,7 @@ const showLatestPosts = (data) => {
       bumped_at,
     } = item;
 
-  });
+    return `<tr></tr>`;
+  }).join('')
 };
 
