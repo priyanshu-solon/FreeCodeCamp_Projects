@@ -33,7 +33,15 @@ const showLatestPosts = (data) => {
       bumped_at,
     } = item;
 
-    return `<tr></tr>`;
-  }).join('')
+    return `
+      <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+    `;
+  }).join("");
 };
 
