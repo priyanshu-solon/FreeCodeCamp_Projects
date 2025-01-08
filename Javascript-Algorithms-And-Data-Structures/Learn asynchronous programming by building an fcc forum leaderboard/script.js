@@ -34,14 +34,15 @@ const showLatestPosts = (data) => {
     } = item;
 
     return `
-      <tr>
+    <tr>
+      <td>
+      <p class="post-title">${title}</p>
+      </td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      </tr>
-    `;
+    </tr>`;
   }).join("");
 };
 
