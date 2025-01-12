@@ -27,7 +27,15 @@ const timeAgo = (time) => {
   return `${daysAgo}d ago`;
 };
 
+const viewCount = (views) => {
+  const thousands = Math.floor(views / 1000);
 
+  if (views >= 1000) {
+    return `${thousands}k`;
+  }
+
+  return views;
+};
 
 const fetchData = async () => {
   try {
@@ -69,3 +77,4 @@ const showLatestPosts = (data) => {
     </tr>`;
   }).join("");
 };
+
