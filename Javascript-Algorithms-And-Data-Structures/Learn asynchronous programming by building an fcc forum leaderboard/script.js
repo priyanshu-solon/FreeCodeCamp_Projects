@@ -7,6 +7,7 @@ const postsContainer = document.getElementById("posts-container");
 
 const allCategories = {
   299: { category: "Career Advice", className: "career" },
+  409: { category: "Project Feedback", className: "feedback" },
 
 };
 
