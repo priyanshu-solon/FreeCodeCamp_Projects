@@ -16,7 +16,9 @@ const allCategories = {
   560: { category: "Backend Development", className: "backend" },
 };
 
-
+const forumCategory = (id) => {
+  
+};
 
 const timeAgo = (time) => {
   const currentTime = new Date();
@@ -73,8 +75,7 @@ const showLatestPosts = (data) => {
       views,
       posts_count,
       slug,
-      posters,
-      category_id,
+      posters,_id,
       bumped_at,
     } = item;
 
@@ -90,3 +91,4 @@ const showLatestPosts = (data) => {
     </tr>`;
   }).join("");
 };
+
