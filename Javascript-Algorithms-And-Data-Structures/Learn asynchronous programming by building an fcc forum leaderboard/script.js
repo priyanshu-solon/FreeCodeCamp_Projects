@@ -17,6 +17,7 @@ const allCategories = {
 };
 
 const forumCategory = (id) => {
+  let selectedCategory = {};
   
 };
 
@@ -91,4 +92,3 @@ const showLatestPosts = (data) => {
     </tr>`;
   }).join("");
 };
-
