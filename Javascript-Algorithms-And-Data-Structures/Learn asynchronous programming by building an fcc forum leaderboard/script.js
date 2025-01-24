@@ -25,11 +25,11 @@ const forumCategory = (id) => {
     selectedCategory.className = className;
     selectedCategory.category = category;
   } else {
-selectedCategory.className="general"
-selectedCategory.category="General"
-selectedCategory.id=1
-
+    selectedCategory.className = "general";
+    selectedCategory.category = "General";
+    selectedCategory.id = 1;
   }
+  const url=`${forumCategoryUrl}${selectedCategory.className}/${id}`
 };
 
 const timeAgo = (time) => {
@@ -103,4 +103,3 @@ const showLatestPosts = (data) => {
     </tr>`;
   }).join("");
 };
-
