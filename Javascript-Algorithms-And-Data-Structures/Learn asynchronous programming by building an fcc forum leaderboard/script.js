@@ -32,7 +32,7 @@ const forumCategory = (id) => {
   const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
   const linkText = selectedCategory.category;
   const linkClass = `category ${selectedCategory.className}`;
-
+  return `<a href="${url}" ></a>`;
 };
 
 const timeAgo = (time) => {
@@ -107,3 +107,4 @@ const showLatestPosts = (data) => {
     </tr>`;
   }).join("");
 };
+
