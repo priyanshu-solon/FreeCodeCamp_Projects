@@ -30,7 +30,9 @@ const forumCategory = (id) => {
     selectedCategory.id = 1;
   }
   const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
-const linkText = selectedCategory.category
+  const linkText = selectedCategory.category;
+  const linkClass = `category ${selectedCategory.className}`;
+
 };
 
 const timeAgo = (time) => {
@@ -88,7 +90,8 @@ const showLatestPosts = (data) => {
       views,
       posts_count,
       slug,
-      posters,_id,
+      posters,
+      category_id,
       bumped_at,
     } = item;
 
