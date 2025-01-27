@@ -70,9 +70,11 @@ const viewCount = (views) => {
   return views;
 };
 
-const avatars=(posters,users)=>{
-  
-}
+const avatars = (posters, users) => {
+return posters.map((poster)=>{
+
+})
+};
 
 const fetchData = async () => {
   try {
@@ -115,3 +117,4 @@ const showLatestPosts = (data) => {
     </tr>`;
   }).join("");
 };
+
