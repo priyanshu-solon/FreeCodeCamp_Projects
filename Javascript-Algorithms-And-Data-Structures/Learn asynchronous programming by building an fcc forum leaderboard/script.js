@@ -70,7 +70,9 @@ const viewCount = (views) => {
   return views;
 };
 
-
+const avatars=(posters,users)=>{
+  
+}
 
 const fetchData = async () => {
   try {
